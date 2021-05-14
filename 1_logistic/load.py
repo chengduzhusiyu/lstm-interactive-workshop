@@ -34,3 +34,16 @@ def mnist(ntrain=60000, ntest=10000, onehot=True):
 
     trX = trX / 255.0
     teX = teX / 255.0
+
+    trX = trX[:ntrain]
+    trY = trY[:ntrain]
+
+    teX = teX[:ntest]
+    teY = teY[:ntest]
+
+    if onehot:
+        trY = one_hot(trY, 10)
+        teY = one_hot(teY, 10)
+    else:
+        trY = np.asarray(trY)
+        teY = np.asarray(teY)
