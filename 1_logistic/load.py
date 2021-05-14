@@ -47,3 +47,5 @@ def mnist(ntrain=60000, ntest=10000, onehot=True):
     else:
         trY = np.asarray(trY)
         teY = np.asarray(teY)
+
+    return trX, teX, trY, teY
