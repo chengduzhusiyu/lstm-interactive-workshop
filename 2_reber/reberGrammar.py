@@ -1,3 +1,3 @@
 #!/usr/bin/python
 
-import num
+import numpy a
