@@ -3,3 +3,5 @@
 import numpy as np
 
 chars='BTSXPVE'
+
+graph = [[
