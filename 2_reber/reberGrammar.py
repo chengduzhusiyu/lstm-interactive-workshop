@@ -4,4 +4,4 @@ import numpy as np
 
 chars='BTSXPVE'
 
-graph = [[
+graph = [[(1,5),('T'
