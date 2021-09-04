@@ -2,4 +2,4 @@
 
 import numpy as np
 
-chars=
+chars='BTSXPVE'
