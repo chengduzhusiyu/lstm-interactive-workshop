@@ -9,4 +9,5 @@ graph = [[(1,5),('T','P')] , [(1,2),('S','X')], \
            [(3,2),('V','P')], [(4,5),('V','T')] ]
 
 
-def in_gram
+def in_grammar(word):
+  
