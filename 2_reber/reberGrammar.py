@@ -11,4 +11,5 @@ graph = [[(1,5),('T','P')] , [(1,2),('S','X')], \
 
 def in_grammar(word):
     if word[0] != 'B':
-        retur
+        return False
+    node
