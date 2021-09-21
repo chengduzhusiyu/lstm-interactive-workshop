@@ -13,4 +13,5 @@ def in_grammar(word):
     if word[0] != 'B':
         return False
     node = 0
-    for c in wor
+    for c in word[1:]:
+   
