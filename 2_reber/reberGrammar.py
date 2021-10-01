@@ -14,4 +14,5 @@ def in_grammar(word):
         return False
     node = 0
     for c in word[1:]:
-        transitions = graph[node
+        transitions = graph[node]
+        try:
