@@ -17,4 +17,5 @@ def in_grammar(word):
         transitions = graph[node]
         try:
             node = transitions[0][transitions[1].index(c)]
-        except ValueError: # using exceptions for flow control in python is commo
+        except ValueError: # using exceptions for flow control in python is common
+     
