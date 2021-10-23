@@ -22,4 +22,5 @@ def in_grammar(word):
     return True
 
 def sequenceToWord(sequence):
-    
+    """
+    con
