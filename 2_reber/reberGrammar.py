@@ -20,3 +20,5 @@ def in_grammar(word):
         except ValueError: # using exceptions for flow control in python is common
             return False
     return True
+
+def sequ
