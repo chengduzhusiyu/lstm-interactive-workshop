@@ -19,4 +19,4 @@ def in_grammar(word):
             node = transitions[0][transitions[1].index(c)]
         except ValueError: # using exceptions for flow control in python is common
             return False
-  
+    return True
