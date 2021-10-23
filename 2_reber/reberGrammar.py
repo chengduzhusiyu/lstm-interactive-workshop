@@ -21,4 +21,5 @@ def in_grammar(word):
             return False
     return True
 
-def sequenceToWord
+def sequenceToWord(sequence):
+    
