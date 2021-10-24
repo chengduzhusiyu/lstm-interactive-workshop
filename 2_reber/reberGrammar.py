@@ -23,4 +23,4 @@ def in_grammar(word):
 
 def sequenceToWord(sequence):
     """
-    converts a se
+    converts a sequence (one
