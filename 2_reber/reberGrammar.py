@@ -23,4 +23,4 @@ def in_grammar(word):
 
 def sequenceToWord(sequence):
     """
-    converts a sequence (one
+    converts a sequence (one-hot) in a r
