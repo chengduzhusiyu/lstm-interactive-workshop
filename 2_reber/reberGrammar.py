@@ -23,4 +23,4 @@ def in_grammar(word):
 
 def sequenceToWord(sequence):
     """
-    con
+    converts a se
