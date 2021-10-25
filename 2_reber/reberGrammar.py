@@ -23,4 +23,6 @@ def in_grammar(word):
 
 def sequenceToWord(sequence):
     """
-    converts a sequence (one-hot) in a reber strin
+    converts a sequence (one-hot) in a reber string
+    """
+    
