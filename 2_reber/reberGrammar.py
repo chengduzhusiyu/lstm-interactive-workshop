@@ -25,4 +25,5 @@ def sequenceToWord(sequence):
     """
     converts a sequence (one-hot) in a reber string
     """
-    reberString 
+    reberString = ''
+    for 
