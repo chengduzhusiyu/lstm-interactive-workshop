@@ -27,4 +27,4 @@ def sequenceToWord(sequence):
     """
     reberString = ''
     for s in sequence:
-    
+        index =
