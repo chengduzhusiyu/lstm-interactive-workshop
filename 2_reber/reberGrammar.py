@@ -32,4 +32,4 @@ def sequenceToWord(sequence):
     return reberString
 
 def generateSequences(minLength):
-  
+    while True:
