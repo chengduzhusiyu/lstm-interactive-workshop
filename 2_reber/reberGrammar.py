@@ -31,4 +31,5 @@ def sequenceToWord(sequence):
         reberString += chars[index]
     return reberString
 
-def generateSequences(
+def generateSequences(minLength):
+  
