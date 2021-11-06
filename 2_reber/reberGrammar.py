@@ -31,3 +31,4 @@ def sequenceToWord(sequence):
         reberString += chars[index]
     return reberString
 
+def gener
