@@ -29,4 +29,5 @@ def sequenceToWord(sequence):
     for s in sequence:
         index = np.where(s==1.)[0][0]
         reberString += chars[index]
-    return reberSt
+    return reberString
+
