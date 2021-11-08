@@ -33,4 +33,5 @@ def sequenceToWord(sequence):
 
 def generateSequences(minLength):
     while True:
-        inchars = ['B'
+        inchars = ['B']
+       
