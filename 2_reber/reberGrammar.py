@@ -37,3 +37,4 @@ def generateSequences(minLength):
         node = 0
         outchars = []
         while node != 6:
+      
