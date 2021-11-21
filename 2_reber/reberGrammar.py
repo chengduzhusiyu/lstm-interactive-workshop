@@ -37,4 +37,5 @@ def generateSequences(minLength):
         node = 0
         outchars = []
         while node != 6:
-            transitions = graph[no
+            transitions = graph[node]
+        
