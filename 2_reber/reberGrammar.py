@@ -38,4 +38,4 @@ def generateSequences(minLength):
         outchars = []
         while node != 6:
             transitions = graph[node]
-            i = np.random.
+            i = np.random.randint(0, 
