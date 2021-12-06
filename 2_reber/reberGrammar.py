@@ -39,4 +39,4 @@ def generateSequences(minLength):
         while node != 6:
             transitions = graph[node]
             i = np.random.randint(0, len(transitions[0]))
-            
+            inchars
