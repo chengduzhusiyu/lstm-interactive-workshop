@@ -40,3 +40,4 @@ def generateSequences(minLength):
             transitions = graph[node]
             i = np.random.randint(0, len(transitions[0]))
             inchars.append(transitions[1][i])
+        
