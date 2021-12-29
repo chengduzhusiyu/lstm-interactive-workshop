@@ -41,4 +41,5 @@ def generateSequences(minLength):
             i = np.random.randint(0, len(transitions[0]))
             inchars.append(transitions[1][i])
             outchars.append(transitions[1])
-            node = transitions
+            node = transitions[0][i]
+  
