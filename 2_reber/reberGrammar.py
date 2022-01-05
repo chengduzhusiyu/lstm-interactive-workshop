@@ -43,4 +43,4 @@ def generateSequences(minLength):
             outchars.append(transitions[1])
             node = transitions[0][i]
         if len(inchars) > minLength:
-         
+            return 
