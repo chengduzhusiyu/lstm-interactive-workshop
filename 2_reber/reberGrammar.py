@@ -46,4 +46,4 @@ def generateSequences(minLength):
             return inchars, outchars
 
 
-def get_one_exa
+def get_one_example(minLengt
