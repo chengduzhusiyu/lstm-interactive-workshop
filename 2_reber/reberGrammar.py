@@ -47,4 +47,4 @@ def generateSequences(minLength):
 
 
 def get_one_example(minLength):
-    inchars, outch
+    inchars, outchars = 
