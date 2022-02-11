@@ -49,4 +49,5 @@ def generateSequences(minLength):
 def get_one_example(minLength):
     inchars, outchars = generateSequences(minLength)
     inseq = []
-    ou
+    outseq= []
+ 
