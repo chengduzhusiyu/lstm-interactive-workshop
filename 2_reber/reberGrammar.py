@@ -50,4 +50,5 @@ def get_one_example(minLength):
     inchars, outchars = generateSequences(minLength)
     inseq = []
     outseq= []
-    for i,o in zip(inchars, ou
+    for i,o in zip(inchars, outchars):
+  
