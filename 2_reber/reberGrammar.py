@@ -51,4 +51,4 @@ def get_one_example(minLength):
     inseq = []
     outseq= []
     for i,o in zip(inchars, outchars):
-        inpt
+        inpt = np.zero
