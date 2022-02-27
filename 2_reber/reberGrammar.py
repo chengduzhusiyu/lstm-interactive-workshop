@@ -51,4 +51,5 @@ def get_one_example(minLength):
     inseq = []
     outseq= []
     for i,o in zip(inchars, outchars):
-        inpt = np.zero
+        inpt = np.zeros(7)
+       
