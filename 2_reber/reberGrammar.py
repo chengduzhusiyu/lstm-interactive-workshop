@@ -52,4 +52,4 @@ def get_one_example(minLength):
     outseq= []
     for i,o in zip(inchars, outchars):
         inpt = np.zeros(7)
-        inpt[chars
+        inpt[chars.find(i)
