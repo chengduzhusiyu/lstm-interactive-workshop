@@ -53,4 +53,4 @@ def get_one_example(minLength):
     for i,o in zip(inchars, outchars):
         inpt = np.zeros(7)
         inpt[chars.find(i)] = 1.
-        out
+        outpt = np.z
