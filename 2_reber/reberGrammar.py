@@ -55,4 +55,4 @@ def get_one_example(minLength):
         inpt[chars.find(i)] = 1.
         outpt = np.zeros(7)
         for oo in o:
-  
+            o
