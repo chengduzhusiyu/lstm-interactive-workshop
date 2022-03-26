@@ -58,4 +58,4 @@ def get_one_example(minLength):
             outpt[chars.find(oo)] = 1.
         inseq.append(inpt)
         outseq.append(outpt)
-    ret
+    return inseq, 
