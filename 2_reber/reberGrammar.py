@@ -60,3 +60,5 @@ def get_one_example(minLength):
         outseq.append(outpt)
     return inseq, outseq
 
+
+def get_char_o
