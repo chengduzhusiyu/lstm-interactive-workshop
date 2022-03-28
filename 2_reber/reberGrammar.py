@@ -61,4 +61,4 @@ def get_one_example(minLength):
     return inseq, outseq
 
 
-def get_char_o
+def get_char_one_hot(char)
