@@ -62,4 +62,4 @@ def get_one_example(minLength):
 
 
 def get_char_one_hot(char):
-    char_oh = np
+    char_oh = np.zeros(
