@@ -64,4 +64,5 @@ def get_one_example(minLength):
 def get_char_one_hot(char):
     char_oh = np.zeros(7)
     for c in char:
-      char_oh[chars.find(c)
+      char_oh[chars.find(c)] = 1.
+   
