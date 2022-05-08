@@ -67,4 +67,5 @@ def get_char_one_hot(char):
       char_oh[chars.find(c)] = 1.
     return [char_oh]
 
-def get_n_examples(n, minLength
+def get_n_examples(n, minLength=10):
+  
