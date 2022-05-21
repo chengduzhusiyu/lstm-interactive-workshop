@@ -68,4 +68,4 @@ def get_char_one_hot(char):
     return [char_oh]
 
 def get_n_examples(n, minLength=10):
-  
+    exam
