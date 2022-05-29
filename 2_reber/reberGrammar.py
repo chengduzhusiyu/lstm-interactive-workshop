@@ -69,4 +69,4 @@ def get_char_one_hot(char):
 
 def get_n_examples(n, minLength=10):
     examples = []
- 
+    for i i
