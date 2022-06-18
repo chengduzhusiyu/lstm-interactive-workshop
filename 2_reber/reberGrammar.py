@@ -70,4 +70,4 @@ def get_char_one_hot(char):
 def get_n_examples(n, minLength=10):
     examples = []
     for i in xrange(n):
-        examples.append(get_one_example(min
+        examples.append(get_one_example(minLength))
