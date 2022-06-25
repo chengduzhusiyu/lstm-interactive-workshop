@@ -73,4 +73,5 @@ def get_n_examples(n, minLength=10):
         examples.append(get_one_example(minLength))
     return examples
 
-emb
+emb_chars = "TP"
+
