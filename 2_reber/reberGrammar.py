@@ -76,4 +76,4 @@ def get_n_examples(n, minLength=10):
 emb_chars = "TP"
 
 
-def get_one_embedded_example(mi
+def get_one_embedded_example(minLength=10):
