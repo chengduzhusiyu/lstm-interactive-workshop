@@ -78,4 +78,4 @@ emb_chars = "TP"
 
 def get_one_embedded_example(minLength=10):
     i, o = get_one_example(minLength)
-    emb
+    emb_char = emb_chars[
