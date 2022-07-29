@@ -78,4 +78,5 @@ emb_chars = "TP"
 
 def get_one_embedded_example(minLength=10):
     i, o = get_one_example(minLength)
-    emb_char = emb_chars[np.random.randint(0, len(emb_chars
+    emb_char = emb_chars[np.random.randint(0, len(emb_chars))]
+    n
