@@ -81,4 +81,5 @@ def get_one_embedded_example(minLength=10):
     emb_char = emb_chars[np.random.randint(0, len(emb_chars))]
     new_in = get_char_one_hot(('B',))
     new_in += get_char_one_hot((emb_char,))
-    new_out= get_char_one_hot(emb_chars
+    new_out= get_char_one_hot(emb_chars)
+    new_
