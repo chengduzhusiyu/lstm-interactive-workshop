@@ -85,4 +85,4 @@ def get_one_embedded_example(minLength=10):
     new_out+= get_char_one_hot('B',)
     new_in += i
     new_out += o
-    new_
+    new_in += get_c
