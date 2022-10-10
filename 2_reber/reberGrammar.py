@@ -89,4 +89,6 @@ def get_one_embedded_example(minLength=10):
     new_in += get_char_one_hot((emb_char,))
     new_out += get_char_one_hot((emb_char, ))
     new_out += get_char_one_hot(('E',))
-    return new_in,
+    return new_in, new_out
+
+d
