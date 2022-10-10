@@ -91,4 +91,4 @@ def get_one_embedded_example(minLength=10):
     new_out += get_char_one_hot(('E',))
     return new_in, new_out
 
-d
+def get_
