@@ -92,4 +92,4 @@ def get_one_embedded_example(minLength=10):
     return new_in, new_out
 
 def get_n_embedded_examples(n, minLength=10):
-    example
+    examples = [
