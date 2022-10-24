@@ -10,3 +10,10 @@ def each_json(fn, max_count):
         for line in f:
             if i == max_count:
                 break
+            j = json.loads(line)
+            yield j
+            i += 1
+    assert i == max_count
+
+
+def all_impermium_one_source(
