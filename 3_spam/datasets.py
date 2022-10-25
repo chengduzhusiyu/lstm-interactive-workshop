@@ -17,3 +17,15 @@ def each_json(fn, max_count):
 
 
 def all_impermium_one_source(
+        max_samples_per_class=45000, source='fyre'):
+    pairs = []
+
+    fn = '/media/data/knighton/data/spam_%s.txt' % source
+    for j in each_json(fn, max_samples_per_class):
+        pair = (j, 'spam')
+        pairs.append(pair)
+
+    fn = '/media/data/knighton/data/ham_%s.txt' % source
+    for j in each_json(fn, max_samples_per_class):
+        pair = (j, 'ham')
+        pairs.append(pair)
