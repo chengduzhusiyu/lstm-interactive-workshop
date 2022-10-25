@@ -29,3 +29,16 @@ def all_impermium_one_source(
     for j in each_json(fn, max_samples_per_class):
         pair = (j, 'ham')
         pairs.append(pair)
+
+    random.shuffle(pairs)
+
+    n = len(pairs)
+    train = pairs[:int(n * 0.8)]
+    dev = pairs[int(n * 0.8):int(n * 0.9)]
+    test = pairs[int(n * 0.9):]
+
+    train = zip(*train)
+    dev = zip(*dev)
+    test = zip(*test)
+
+    return train, dev, test
