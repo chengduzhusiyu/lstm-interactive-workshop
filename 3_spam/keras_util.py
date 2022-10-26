@@ -10,3 +10,10 @@ def show_accuracy(f):
     try:
         assert 0 <= f < 1
         s = '%.5f' % f
+        return s[2:]
+    except:
+        return 'xxxx'
+
+
+class EarlyTermination(Exception):
+    pass
