@@ -27,3 +27,14 @@ def is_hopeless(accs):
         a = accs[i]
         b = accs[i + 1]
         if a < b:
+            return False
+
+    return True
+
+
+class SaveModelsAndTerminateEarly(Callback):
+    def on_epoch_begin(self, _1, _2):
+        self.batch_accuracies = []
+        self.epoch_accuracies = []
+
+    def set_params(self, model_save_dir, resume_epoch=None):
