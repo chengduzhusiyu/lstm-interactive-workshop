@@ -38,3 +38,11 @@ class SaveModelsAndTerminateEarly(Callback):
         self.epoch_accuracies = []
 
     def set_params(self, model_save_dir, resume_epoch=None):
+        self.model_save_dir = model_save_dir
+        if resume_epoch:
+            self.epoch_offset = resume_epoch
+        else:
+            self.epoch_offset = 0
+
+        self.acc_to_beat = 0.0
+        self.epochs_left = None
