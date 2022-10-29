@@ -17,3 +17,13 @@ def show_accuracy(f):
 
 class EarlyTermination(Exception):
     pass
+
+
+def is_hopeless(accs):
+    if len(accs) < 5:
+        return False
+
+    for i in range(len(accs) - 5, len(accs) - 1):
+        a = accs[i]
+        b = accs[i + 1]
+        if a < b:
