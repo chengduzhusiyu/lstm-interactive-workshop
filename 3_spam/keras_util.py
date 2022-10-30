@@ -55,3 +55,19 @@ class SaveModelsAndTerminateEarly(Callback):
         self.epoch_accuracies.append(val_acc)
         if is_hopeless(self.epoch_accuracies):
             raise EarlyTermination
+
+    def on_epoch_end(self, epoch_index, logs):
+        train_acc = sum(self.batch_accuracies) / len(self.batch_accuracies)
+        train_s = show_accuracy(train_acc)
+
+        val_acc = logs['val_acc']
+        val_s = show_accuracy(val_acc)
+
+        e = epoch_index + self.epoch_offset
+
+        f = ('%s/epoch_%04d_train_%s_val_%s.h5' %
+             (self.model_save_dir, e, train_s, val_s))
+        d = os.path.dirname(f)
+        print f, d
+        if not os.path.isdir(d):
+            print 'Creating...'
