@@ -46,3 +46,12 @@ class SaveModelsAndTerminateEarly(Callback):
 
         self.acc_to_beat = 0.0
         self.epochs_left = None
+
+    def on_batch_end(self, batch_index, logs):
+        acc = logs['acc']
+        self.batch_accuracies.append(acc)
+
+    def maybe_terminate_early(self, val_acc):
+        self.epoch_accuracies.append(val_acc)
+        if is_hopeless(self.epoch_accuracies):
+            raise EarlyTermination
