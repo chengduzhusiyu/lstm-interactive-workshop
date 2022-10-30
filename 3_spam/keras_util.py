@@ -71,3 +71,7 @@ class SaveModelsAndTerminateEarly(Callback):
         print f, d
         if not os.path.isdir(d):
             print 'Creating...'
+            os.makedirs(d)
+        self.model.save_weights(f)
+
+        self.maybe_terminate_early(val_acc)
