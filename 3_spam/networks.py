@@ -5,3 +5,6 @@ from keras.layers.core import Activation, Dense, Dropout, Flatten, \
 from keras.layers.embeddings import Embedding
 from keras.layers.normalization import BatchNormalization
 import numpy as np
+
+
+def mak
