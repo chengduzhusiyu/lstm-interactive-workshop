@@ -7,4 +7,4 @@ from keras.layers.normalization import BatchNormalization
 import numpy as np
 
 
-def mak
+def make_dense(
