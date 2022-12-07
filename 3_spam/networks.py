@@ -7,4 +7,5 @@ from keras.layers.normalization import BatchNormalization
 import numpy as np
 
 
-def make_dense(X, y, num_layers, width, dropo
+def make_dense(X, y, num_layers, width, dropout):
+    a
