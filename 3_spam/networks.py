@@ -8,4 +8,4 @@ import numpy as np
 
 
 def make_dense(X, y, num_layers, width, dropout):
-    a
+    assert len(
