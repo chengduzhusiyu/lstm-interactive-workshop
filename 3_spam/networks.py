@@ -9,4 +9,4 @@ import numpy as np
 
 def make_dense(X, y, num_layers, width, dropout):
     assert len(X.shape) == 2
-    asser
+    assert len(y.
