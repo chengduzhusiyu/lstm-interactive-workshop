@@ -10,3 +10,5 @@ import numpy as np
 def make_dense(X, y, num_layers, width, dropout):
     assert len(X.shape) == 2
     assert len(y.shape) == 2
+
+    voca
