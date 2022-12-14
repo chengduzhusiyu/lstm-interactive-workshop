@@ -11,4 +11,4 @@ def make_dense(X, y, num_layers, width, dropout):
     assert len(X.shape) == 2
     assert len(y.shape) == 2
 
-    voca
+    vocab_size = np.
