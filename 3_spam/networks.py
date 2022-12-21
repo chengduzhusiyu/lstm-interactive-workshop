@@ -14,3 +14,5 @@ def make_dense(X, y, num_layers, width, dropout):
     vocab_size = np.amax(X) + 1
 
     print 'Vocab size:', vocab_size
+
+    m = Sequ
