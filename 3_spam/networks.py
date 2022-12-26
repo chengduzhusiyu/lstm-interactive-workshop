@@ -16,4 +16,5 @@ def make_dense(X, y, num_layers, width, dropout):
     print 'Vocab size:', vocab_size
 
     m = Sequential()
-    m.add(Embedding(vocab_size,
+    m.add(Embedding(vocab_size, 8))
+  
