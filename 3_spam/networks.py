@@ -19,4 +19,5 @@ def make_dense(X, y, num_layers, width, dropout):
     m.add(Embedding(vocab_size, 8))
     m.add(Dropout(dropout))
 
-    m.add(TimeDistributedDense(8, 64
+    m.add(TimeDistributedDense(8, 64))
+    m.add(
