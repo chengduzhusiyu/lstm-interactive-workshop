@@ -22,4 +22,5 @@ def make_dense(X, y, num_layers, width, dropout):
     m.add(TimeDistributedDense(8, 64))
     m.add(Flatten())
 
-    m.add(BatchNormalization((64 * X.shape[1],)
+    m.add(BatchNormalization((64 * X.shape[1],)))
+    m.
