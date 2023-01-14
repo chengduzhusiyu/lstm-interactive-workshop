@@ -23,4 +23,5 @@ def make_dense(X, y, num_layers, width, dropout):
     m.add(Flatten())
 
     m.add(BatchNormalization((64 * X.shape[1],)))
-    m.add(PReLU((64 * X.sh
+    m.add(PReLU((64 * X.shape[1],)))
+  
