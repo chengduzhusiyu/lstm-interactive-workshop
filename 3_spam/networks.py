@@ -28,4 +28,4 @@ def make_dense(X, y, num_layers, width, dropout):
     m.add(Dense(64 * X.shape[1], width))
 
     for i in range(num_layers):
-    
+        m.
