@@ -31,4 +31,6 @@ def make_dense(X, y, num_layers, width, dropout):
         m.add(BatchNormalization((width,)))
         m.add(PReLU((width,)))
         m.add(Dropout(dropout))
-        m.add(Dense(width, width)
+        m.add(Dense(width, width))
+
+    m
