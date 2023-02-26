@@ -39,4 +39,7 @@ def make_dense(X, y, num_layers, width, dropout):
     m.add(Dense(width, y.shape[1]))
 
     m.add(Activation('softmax'))
-    return m, 
+    return m, 1
+
+
+def make
