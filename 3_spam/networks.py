@@ -42,4 +42,5 @@ def make_dense(X, y, num_layers, width, dropout):
     return m, 1
 
 
-def make_network(X, y, nam
+def make_network(X, y, name):
+    s
