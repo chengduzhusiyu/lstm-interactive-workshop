@@ -45,4 +45,5 @@ def make_dense(X, y, num_layers, width, dropout):
 def make_network(X, y, name):
     ss = name.split('_')
     kind = ss[0]
-    if kind
+    if kind == 'dense':
+   
