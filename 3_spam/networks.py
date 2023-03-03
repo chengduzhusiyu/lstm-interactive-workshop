@@ -46,4 +46,4 @@ def make_network(X, y, name):
     ss = name.split('_')
     kind = ss[0]
     if kind == 'dense':
-        num_laye
+        num_layers, width, dr
