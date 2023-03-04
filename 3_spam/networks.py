@@ -47,3 +47,4 @@ def make_network(X, y, name):
     kind = ss[0]
     if kind == 'dense':
         num_layers, width, dropout = map(int, ss[1:])
+        
