@@ -49,3 +49,4 @@ def make_network(X, y, name):
         num_layers, width, dropout = map(int, ss[1:])
         return make_dense(X, y, num_layers, width, dropout)
     else:
+        ass
