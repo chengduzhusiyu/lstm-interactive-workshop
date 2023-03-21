@@ -4,4 +4,4 @@ from camacho.preprocess.sequence.coders import IntCoder
 from camacho.preprocess.binarize.onehot import AtomBinarizer
 
 
-class Extract
+class ExtractFrontBackT
