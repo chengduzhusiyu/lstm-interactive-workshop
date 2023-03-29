@@ -5,4 +5,4 @@ from camacho.preprocess.binarize.onehot import AtomBinarizer
 
 
 class ExtractFrontBackText(Transformer):
-    def _
+    def __init__(se
