@@ -6,4 +6,6 @@ from camacho.preprocess.binarize.onehot import AtomBinarizer
 
 class ExtractFrontBackText(Transformer):
     def __init__(self, length=128):
-        self.length 
+        self.length = length
+
+    
