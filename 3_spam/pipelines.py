@@ -8,4 +8,5 @@ class ExtractFrontBackText(Transformer):
     def __init__(self, length=128):
         self.length = length
 
-    def transform(s
+    def transform(self, jj):
+ 
