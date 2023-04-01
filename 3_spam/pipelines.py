@@ -9,4 +9,5 @@ class ExtractFrontBackText(Transformer):
         self.length = length
 
     def transform(self, jj):
-        n = self.lengt
+        n = self.length / 2
+      
