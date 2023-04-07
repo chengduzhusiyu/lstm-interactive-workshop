@@ -11,4 +11,4 @@ class ExtractFrontBackText(Transformer):
     def transform(self, jj):
         n = self.length / 2
         ss = []
-   
+        for j in jj
