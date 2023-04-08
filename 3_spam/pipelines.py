@@ -12,4 +12,4 @@ class ExtractFrontBackText(Transformer):
         n = self.length / 2
         ss = []
         for j in jj:
-      
+            s = j[
