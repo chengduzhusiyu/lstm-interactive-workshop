@@ -12,4 +12,5 @@ class ExtractFrontBackText(Transformer):
         n = self.length / 2
         ss = []
         for j in jj:
-            s = j['object']['content'
+            s = j['object']['content']
+       
