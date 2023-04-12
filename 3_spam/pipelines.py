@@ -14,3 +14,4 @@ class ExtractFrontBackText(Transformer):
         for j in jj:
             s = j['object']['content']
             front = s[:n]
+          
