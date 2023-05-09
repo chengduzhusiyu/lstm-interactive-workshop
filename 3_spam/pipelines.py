@@ -15,4 +15,5 @@ class ExtractFrontBackText(Transformer):
             s = j['object']['content']
             front = s[:n]
             if len(front) < n:
-                front += '\0' * (n - len(fron
+                front += '\0' * (n - len(front))
+        
