@@ -16,4 +16,4 @@ class ExtractFrontBackText(Transformer):
             front = s[:n]
             if len(front) < n:
                 front += '\0' * (n - len(front))
-            back 
+            back = s[-n:]
