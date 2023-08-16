@@ -22,4 +22,5 @@ class ExtractFrontBackText(Transformer):
             if self.length % 2:
                 s = front + '\0' + back
             else:
-                s = front + '\0' + back[
+                s = front + '\0' + back[1:]
+         
