@@ -23,4 +23,5 @@ class ExtractFrontBackText(Transformer):
                 s = front + '\0' + back
             else:
                 s = front + '\0' + back[1:]
-            ss.append(
+            ss.append(s)
+    
