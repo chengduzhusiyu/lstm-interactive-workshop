@@ -28,4 +28,4 @@ class ExtractFrontBackText(Transformer):
 
 
 def json_to_ints2d():
-    X = Transfor
+    X = TransformerPipe
