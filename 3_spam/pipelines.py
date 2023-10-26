@@ -29,4 +29,5 @@ class ExtractFrontBackText(Transformer):
 
 def json_to_ints2d():
     X = TransformerPipeline([
-        ExtractFrontBackText(l
+        ExtractFrontBackText(length=128),
+       
