@@ -32,3 +32,5 @@ def json_to_ints2d():
         ExtractFrontBackText(length=128),
         IntCoder(min_freq=10),
     ])
+
+    y = T
