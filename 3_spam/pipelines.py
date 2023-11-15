@@ -33,4 +33,4 @@ def json_to_ints2d():
         IntCoder(min_freq=10),
     ])
 
-    y = T
+    y = Transformer
