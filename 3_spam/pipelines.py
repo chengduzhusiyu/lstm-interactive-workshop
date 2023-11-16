@@ -33,4 +33,5 @@ def json_to_ints2d():
         IntCoder(min_freq=10),
     ])
 
-    y = TransformerPipeli
+    y = TransformerPipeline([
+        A
