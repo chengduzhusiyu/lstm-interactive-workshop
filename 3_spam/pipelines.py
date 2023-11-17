@@ -34,4 +34,7 @@ def json_to_ints2d():
     ])
 
     y = TransformerPipeline([
-        AtomBinarize
+        AtomBinarizer(),
+    ])
+
+ 
