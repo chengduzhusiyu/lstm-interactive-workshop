@@ -37,4 +37,4 @@ def json_to_ints2d():
         AtomBinarizer(),
     ])
 
-    return X
+    return X, y
