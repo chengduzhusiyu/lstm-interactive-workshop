@@ -1,1 +1,1 @@
-git+https://github.com/knighton/camacho
+git+https://github.com/knighton/camacho@camacho
