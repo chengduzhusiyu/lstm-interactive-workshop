@@ -22,3 +22,11 @@ def parse_args():
 def get_epoch(f):
     x = f.index('epoch_') + len('epoch_')
     e = f[x:]
+    e = e[:e.index('_')]
+    return int(e)
+
+
+def get_last_checkpoint(d):
+    ff = glob(d + '/*')
+    if not ff:
+        return None, 0
