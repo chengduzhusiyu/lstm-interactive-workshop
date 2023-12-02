@@ -30,3 +30,15 @@ def get_last_checkpoint(d):
     ff = glob(d + '/*')
     if not ff:
         return None, 0
+
+    ff.sort()
+    f = ff[-1]
+
+    return f, get_epoch(f) + 1
+
+
+def transform_data((train, val, test), X_tf, y_tf):
+    train = (X_tf.fit_transform(train[0]),
+             y_tf.fit_transform(train[1]))
+    val = (X_tf.transform(val[0]), y_tf.transform(val[1]))
+    test = (X_tf.transform(test[0]), y_tf.transform(test[1]))
