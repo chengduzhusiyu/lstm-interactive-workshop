@@ -42,3 +42,17 @@ def transform_data((train, val, test), X_tf, y_tf):
              y_tf.fit_transform(train[1]))
     val = (X_tf.transform(val[0]), y_tf.transform(val[1]))
     test = (X_tf.transform(test[0]), y_tf.transform(test[1]))
+    return train, val, test
+
+
+def build_model(data, network_name, start_weights):
+    X, y = data[0]
+    network, num_frontends = \
+        networks.make_network(X, y, network_name)
+
+    if start_weights:
+        print 'Loading weights from', start_weights
+        network.load_weights(start_weights)
+
+    print 'Compiling'
+    network.compile(loss='categorical_crossentropy',
