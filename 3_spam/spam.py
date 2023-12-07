@@ -56,3 +56,13 @@ def build_model(data, network_name, start_weights):
 
     print 'Compiling'
     network.compile(loss='categorical_crossentropy',
+                    optimizer='adam')
+
+    return network, num_frontends
+
+
+def train(data, model, num_frontends, resume_epoch, model_dir):
+    cb = SaveModelsAndTerminateEarly()
+    cb.set_params(model_dir, resume_epoch)
+    X_train, y_train = data[0]
+    X_val, y_val = data[1]
