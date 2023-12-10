@@ -66,3 +66,16 @@ def train(data, model, num_frontends, resume_epoch, model_dir):
     cb.set_params(model_dir, resume_epoch)
     X_train, y_train = data[0]
     X_val, y_val = data[1]
+
+    if 1 < num_frontends:
+        X_train = [X_train] * num_frontends
+        X_val = [X_val] * num_frontends
+
+    try:
+        model.fit(
+            X_train, y_train, validation_data=(X_val, y_val),
+            nb_epoch=10000, batch_size=128, callbacks=[cb],
+            show_accuracy=True)
+    except EarlyTermination:
+        pass
+
