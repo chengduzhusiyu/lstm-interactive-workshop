@@ -87,3 +87,17 @@ def run(args):
     print 'Loading raw data'
     raw_data = datasets.all_impermium_one_source(
         args.samples_per_class, args.source)
+
+    print 'Building transformers'
+    X_tf, y_tf = pipelines.json_to_ints2d()
+
+    print 'Transforming data'
+    data = transform_data(raw_data, X_tf, y_tf)
+
+    print 'Locating the most recent checkpoint'
+    model_dir = 'models/%d_%s' % (
+        args.samples_per_class, args.network)
+    start_weights, resume_epoch = get_last_checkpoint(model_dir)
+
+    print 'Building model'
+    network, num_frontends = \
