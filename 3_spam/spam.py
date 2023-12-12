@@ -79,3 +79,11 @@ def train(data, model, num_frontends, resume_epoch, model_dir):
     except EarlyTermination:
         pass
 
+
+def run(args):
+    random.seed(1337)
+    np.random.seed(1337)
+
+    print 'Loading raw data'
+    raw_data = datasets.all_impermium_one_source(
+        args.samples_per_class, args.source)
