@@ -101,3 +101,7 @@ def run(args):
 
     print 'Building model'
     network, num_frontends = \
+        build_model(data, args.network, start_weights)
+
+    print 'Training'
+    train(data, network, num_frontends, resume_epoch, model_dir)
