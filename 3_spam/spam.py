@@ -105,3 +105,7 @@ def run(args):
 
     print 'Training'
     train(data, network, num_frontends, resume_epoch, model_dir)
+
+
+if __name__ == '__main__':
+    run(parse_args())
